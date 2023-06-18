@@ -52,12 +52,17 @@
     }
   },
   "lint-staged": {
-    "{packages,play}/**/{src}/**/**/*.{vue,ts,tsx,jsx}": [
+    "packages/components/**/*.{vue,ts,tsx,jsx}": [
       "npx prettier --write",
       "npx eslint --fix",
       "npx commitlint -E HUSKY_GIT_PARAMS"
     ],
-    "**/*.scss": "stylelint --syntax scss"
+    "packages/theme-chalk/**/*.scss": "stylelint --fix",
+    "play/**/*.{vue,js,ts,tsx,jsx,scss}": [
+      "npx prettier --write",
+      "npx eslint --fix",
+      "npx stylelint --syntax scss"
+    ]
   },
   "dependencies": {
     "vue": "^3.3.4"
