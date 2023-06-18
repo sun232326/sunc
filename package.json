@@ -57,7 +57,7 @@
       "npx eslint --fix",
       "npx commitlint -E HUSKY_GIT_PARAMS"
     ],
-    "packages/theme-chalk/**/*.scss": "stylelint",
+    "packages/theme-chalk/**/*.scss": "npx stylelint",
     "play/**/*.{vue,js,ts,tsx,jsx,scss}": [
       "npx prettier --write",
       "npx eslint --fix",
