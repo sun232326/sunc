@@ -5,5 +5,5 @@ import sunc from '@sunc/components';
 const app = createApp(App);
 
 app.use(sunc);
-
+console.log("hhh")
 app.mount("#app");
