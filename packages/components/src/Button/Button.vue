@@ -1,8 +1,8 @@
 <template>
-    <div>button22</div>
+  <div>button22</div>
 </template>
 <script lang="ts" setup>
 defineOptions({
-    name: 's-button'
-})
+  name: 's-button'
+});
 </script>

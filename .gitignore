@@ -1,3 +1,6 @@
 node_modules
 dist
 play/node_modules
+packages/**/node_modules
+.idea
+.DS_Store

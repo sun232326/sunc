@@ -1,11 +1,12 @@
-import * as components from "./src/index";
+import { App } from 'vue';
+import * as components from './src/index';
+
 export * from './src/index';
-import { App } from "vue";
 
 export default {
-    install: (app: App) => {
-        for(let c in components) {
-            app.use(components[c as keyof typeof components]);
-        }
-    }
-}
+  install: (app: App) => {
+    Object.keys(components).forEach(c => {
+      app.use(components[c as keyof typeof components]);
+    });
+  }
+};
