@@ -48,13 +48,14 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": ""
     }
   },
   "lint-staged": {
     "{packages,play}/**/{src}/**/**/*.{vue,ts,tsx,jsx}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint --fix",
+      "commitlint -E HUSKY_GIT_PARAMS"
     ]
   },
   "dependencies": {
