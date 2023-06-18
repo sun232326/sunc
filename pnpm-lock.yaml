@@ -71,6 +71,9 @@ importers:
       stylelint:
         specifier: ^15.6.2
         version: 15.6.2
+      stylelint-scss:
+        specifier: ^5.0.1
+        version: 5.0.1(stylelint@15.6.2)
       typescript:
         specifier: ^5.0.4
         version: 5.0.4
@@ -3803,6 +3806,18 @@ packages:
 
   /style-search@0.1.0:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
+    dev: true
+
+  /stylelint-scss@5.0.1(stylelint@15.6.2):
+    resolution: {integrity: sha512-n87iCRZrr2J7//I/QFsDXxFLnHKw633U4qvWZ+mOW6KDAp/HLj06H+6+f9zOuTYy+MdGdTuCSDROCpQIhw5fvQ==}
+    peerDependencies:
+      stylelint: ^14.5.1 || ^15.0.0
+    dependencies:
+      postcss-media-query-parser: 0.2.3
+      postcss-resolve-nested-selector: 0.1.1
+      postcss-selector-parser: 6.0.13
+      postcss-value-parser: 4.2.0
+      stylelint: 15.6.2
     dev: true
 
   /stylelint@15.6.2:
