@@ -3,7 +3,8 @@
 </template>
 <script lang="ts" setup>
 import '@sunc/theme-chalk/Button.scss';
+
 defineOptions({
-  name: 's-button'
+  name: 'SButton'
 });
 </script>

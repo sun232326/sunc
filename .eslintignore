@@ -1,6 +1,4 @@
 node_modules
 typings
-dist/
-.vscode
-.github
-.husky
+dist
+play

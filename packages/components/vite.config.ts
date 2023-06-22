@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 import dts from 'vite-plugin-dts';
 // @ts-ignore
 import DefineOptions from 'unplugin-vue-define-options/vite';
@@ -45,6 +46,7 @@ export default defineConfig({
   },
   plugins: [
     vue(),
+    vueJsx(),
     dts({
       entryRoot: './src',
       outputDir: ['../sunc/es/src', '../sunc/lib/src'],

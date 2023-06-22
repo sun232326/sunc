@@ -1,11 +1,44 @@
+// {
+//   "eslint.execArgv": null,
+//   // 保存时 prettier 自动格式化
+//   "editor.formatOnSave": true,
+//   "editor.defaultFormatter": "esbenp.prettier-vscode",
+//   "prettier.requireConfig": true,
+//   // 保存时自动启用 eslint --fix 自动修复
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll": true,
+//     "source.formatDocument": true,
+//     "source.fixAll.eslint": true,
+//     "source.fixAll.stylelint": true
+//   }
+// }
 {
-  "eslint.execArgv": null,
-  // 保存时 prettier 自动格式化
-  // "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.requireConfig": true,
-  // 保存时自动启用 eslint --fix 自动修复
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    // "source.fixAll.eslint": true
-  }
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "npm.packageManager": "pnpm",
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue",
+    "markdown",
+    "json",
+    "jsonc"
+  ],
 }
